@@ -17,7 +17,7 @@ import CreateAccount from "./components/Register/Register";
 export default function App() {
     return (
         <>
-        <Router basename="/reactjs-ecommerce-website">
+        <Router>
             <Header />
             <Routes>
             <Route exact path="/" element={<Home />} />
