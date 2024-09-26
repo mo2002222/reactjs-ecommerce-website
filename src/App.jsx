@@ -18,7 +18,7 @@ export default function App() {
     return (
         <>
         <Router>
-            <Header />
+            <Header basename="/reactjs-ecommerce-website" />
             <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="*" element={<NotFound />} />
