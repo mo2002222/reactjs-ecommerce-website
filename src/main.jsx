@@ -18,6 +18,7 @@ import Login from "./components/Login/Login";
 import CreateAccount from "./components/Register/Register";
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    return(
     <Router basename="/shop">
             <Header />
             <Routes>
@@ -34,5 +35,6 @@ createRoot(document.getElementById('root')).render(
             <Route path="/Register" element={<CreateAccount />} />
             </Routes>
         </Router>
+    );
   </StrictMode>,
 )
