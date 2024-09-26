@@ -1,0 +1,7 @@
+.card-title:hover{
+    color: rgb(239, 108, 0);
+}
+.card:hover{
+    transform: translate(5px,-15px);
+    transition: .3s;
+}
