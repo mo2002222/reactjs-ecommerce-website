@@ -17,7 +17,23 @@ import CreateAccount from "./components/Register/Register";
 export default function App() {
     return (
         <>
-        <Home/>
+        <Router>
+            <Header />
+            <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="*" element={<NotFound />} />
+            <Route path="/shop" element={<Shop />} />
+            <Route path="/shop/product" element={<ShopProduct />} />
+            <Route path="/Cart" element={<CartPage />} />
+            <Route path="/Blog" element={<Blog />} />
+            <Route path="/singleBlog" element={<Singleblog />} />
+            <Route path="/AboutUs" element={<AboutUs />} />
+            <Route path="/Contact" element={<Contact />} />
+            <Route path="/Login" element={<Login />} />
+            <Route path="/Register" element={<CreateAccount />} />
+            </Routes>
+            <Footer />
+        </Router>
         </>
     );
 }
