@@ -8,7 +8,7 @@
     "build": "vite build",
     "lint": "eslint .",
     "preview": "vite preview"
-    "homepage" : "https://mo2002222.github.io/reactjs-ecommerce-website/"
+
   },
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^6.6.0",
